@@ -1,0 +1,30 @@
+
+/* -- ------------ --
+   -- CSS / STYLES --
+   -- ------------ -- */
+
+/* colors for heading elements - hierachy - light background */
+/* colors for sub elements - hierachy - light background */
+
+/* colors for heading elements - hierachy - dark background */
+/* colors for sub elements - hierachy - dark background */
+
+#impact-block {
+    max-width: 245px;
+}   
+
+.section-title {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#impact-block p{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 125%;
+    /* or 25px */
+
+    max-width: 245px;
+    text-align: center;
+
+}
