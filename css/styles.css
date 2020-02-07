@@ -3,22 +3,116 @@
    -- CSS / STYLES --
    -- ------------ -- */
 
-/* colors for heading elements - hierachy - light background */
-/* colors for sub elements - hierachy - light background */
+/* --    Main Colors    --
 
-/* colors for heading elements - hierachy - dark background */
-/* colors for sub elements - hierachy - dark background */
+Dark Cerulean           Deep Space Sparkle                
+#02437B                 #465F75                 
 
-#impact-block {
+Pale Cerulean           Lavender Gray 
+#98C1D9                 #BECBD2
+
+Stil de Grain Yellow    Flax
+#FADF63                 #E9D88A
+
+Mountain Meadow         Green Sheen
+#2FD09A                 #5EBF9F
+-------------------------------------------
+white                   Soft White
+#FFFFFF                 #F6F6F6
+
+Gray 1                  Gray 2
+#EEEEEE                 #DDDDDD
+
+Med. Gray 1             Med. Gray 2
+#BBBBBB                 #8888888
+
+Dark Gray 1             Dark Gray 2             Charcoal
+#777777                 #454545                 #333635
+*/
+
+/* dark-mode background color */
+.background-dark { background-color: #465F75;}
+/* light-mode background color */
+.background-light { background-color: #F6F6F6;}
+/* dark color for heading elements - hierachy - light background */
+.head-color-dark { color:#333635; }
+/* dark color for sub elements - hierachy - light background */
+.subhead-color-dark { color: #454545;}
+/* light color for heading elements - hierachy - dark background */
+.head-color-light { color: #F6F6F6;}
+/* light color for sub elements - hierachy - dark background */
+.subtext-color-light { color: #F6F6F6;}
+/* isolation color - normal state */
+.isolation-color { color: #2FD09A;}
+/* isolation color - hover state */
+.hover-color { color: #5EBF9F;}
+/* placeholder text color */
+.placeholder-color { color: #BBBBBB;;}
+
+/* global border radius */
+.recycle-borders { border-radius: 4px;}
+
+/* page title */
+.page-title {
+    font-family: Acumin Pro;
+    font-size: 54px;
+}
+
+
+/* -- ------------ --
+   --   HOMEPAGE   --
+   -- ------------ -- */
+
+/* homepage title */
+.homepage-title {
+    font-family: Bungee;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+}
+/* homepage subtitle */
+.homepage-subtitle {
+    font-family: Acumin Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+}
+/* placeholder text */
+.placeholder-text {
+    font-family: Acumin Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* -- ------------ --
+   -- SEARCH PAGE  --
+   -- ------------ -- */
+
+
+/*    -- Impact Section  -- */
+
+.section-impact {
+    /* height:40%;
+    max-height: 340px; */
+    background: url("../images/impact-background.jpg") no-repeat center center fixed;
+    background-size:cover;
+    z-index: 0;
+    text-align: center;
+}
+.impact-block {
     max-width: 245px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }   
 
 .section-title {
     font-weight: bold;
     font-size: 48px;
+    text-align: center;
 }
 
-#impact-block p{
+.impact-block p{
     font-weight: normal;
     font-size: 20px;
     line-height: 125%;
@@ -26,5 +120,11 @@
 
     max-width: 245px;
     text-align: center;
-
 }
+
+p.carbon-footprint-unit {
+    margin-left: 16px;
+    margin-bottom: 0px;
+    line-height: 125%;
+}
+
