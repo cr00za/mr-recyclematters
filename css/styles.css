@@ -3,6 +3,38 @@
    -- CSS / STYLES --
    -- ------------ -- */
 
+/* Global Reset */
+
+h1, h2, h3, h4, p {
+    margin: 0px !important; 
+    line-height: 125% !important;
+}
+
+/* page title - recycle matters h1 */
+.recycle-h1 {
+    font-family: Acumin Pro;
+    font-weight: 700; 
+    font-size: 46px;
+    padding-bottom: 20px;
+}
+.recycle-h2 {
+    font-family: Acumin Pro;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.recycle-h3 {
+    font-family: Acumin Pro;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* global border radius */
+.recycle-borders { border-radius: 4px;}
+
+
+/* ---------------------------------------- */
+
 /* --    Main Colors    --
 
 Dark Cerulean           Deep Space Sparkle                
@@ -16,7 +48,7 @@ Stil de Grain Yellow    Flax
 
 Mountain Meadow         Green Sheen
 #2FD09A                 #5EBF9F
--------------------------------------------
+--------------------
 white                   Soft White
 #FFFFFF                 #F6F6F6
 
@@ -30,33 +62,31 @@ Dark Gray 1             Dark Gray 2             Charcoal
 #777777                 #454545                 #333635
 */
 
+/* ---------------------------------------- */
+
+/* -- Colors applied to text and backgrounds --
+
 /* dark-mode background color */
 .background-dark { background-color: #465F75;}
 /* light-mode background color */
 .background-light { background-color: #F6F6F6;}
 /* dark color for heading elements - hierachy - light background */
-.head-color-dark { color:#333635; }
+.title-color-dark { color:#333635; }
 /* dark color for sub elements - hierachy - light background */
-.subhead-color-dark { color: #454545;}
+.text-color-dark { color: #454545;}
 /* light color for heading elements - hierachy - dark background */
-.head-color-light { color: #F6F6F6;}
+.title-color-light { color: #F6F6F6;}
 /* light color for sub elements - hierachy - dark background */
-.subtext-color-light { color: #F6F6F6;}
+.text-color-light { color: #F6F6F6;}
+/* warning color - highlight for instructions */
+.highlighter { background-color: #FADF63;}
 /* isolation color - normal state */
 .isolation-color { color: #2FD09A;}
 /* isolation color - hover state */
 .hover-color { color: #5EBF9F;}
 /* placeholder text color */
-.placeholder-color { color: #BBBBBB;;}
+.placeholder-color { color: #BBBBBB;}
 
-/* global border radius */
-.recycle-borders { border-radius: 4px;}
-
-/* page title */
-.page-title {
-    font-family: Acumin Pro;
-    font-size: 54px;
-}
 
 
 /* -- ------------ --
@@ -68,26 +98,36 @@ Dark Gray 1             Dark Gray 2             Charcoal
     font-family: Bungee;
     font-style: normal;
     font-weight: normal;
-    font-size: 55px;
+    font-size: 46px;
+    margin-top: 50%;
 }
 /* homepage subtitle */
 .homepage-subtitle {
     font-family: Acumin Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 27px;
+    font-weight: 300;
+    font-size: 20px;
 }
 /* placeholder text */
 .placeholder-text {
     font-family: Acumin Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 /* -- ------------ --
    -- SEARCH PAGE  --
    -- ------------ -- */
+
+
+/*    -- Result / Instruction Section  -- */
+.banner {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
 
 
 /*    -- Impact Section  -- */
@@ -113,7 +153,7 @@ Dark Gray 1             Dark Gray 2             Charcoal
 }
 
 .impact-block p{
-    font-weight: normal;
+    font-weight: 300;
     font-size: 20px;
     line-height: 125%;
     /* or 25px */
@@ -123,8 +163,19 @@ Dark Gray 1             Dark Gray 2             Charcoal
 }
 
 p.carbon-footprint-unit {
-    margin-left: 16px;
+   
     margin-bottom: 0px;
     line-height: 125%;
 }
+.carbon-footprint-unit { margin-left: 4px;}
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
