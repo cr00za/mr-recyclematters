@@ -15,6 +15,7 @@ h1, h2, h3, h4, p {
     font-family: Acumin Pro;
     font-weight: 700; 
     font-size: 46px;
+    padding-top: 70px;
     padding-bottom: 20px;
 }
 .recycle-h2 {
@@ -25,7 +26,7 @@ h1, h2, h3, h4, p {
 
 .recycle-h3 {
     font-family: Acumin Pro;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 18px;
 }
 
@@ -74,6 +75,8 @@ Dark Gray 1             Dark Gray 2             Charcoal
 .title-color-dark { color:#333635; }
 /* dark color for sub elements - hierachy - light background */
 .text-color-dark { color: #454545;}
+/* map text color for better hierarchy */
+.map-text-color-dark { color: #777777;}
 /* light color for heading elements - hierachy - dark background */
 .title-color-light { color: #F6F6F6;}
 /* light color for sub elements - hierachy - dark background */
@@ -86,7 +89,6 @@ Dark Gray 1             Dark Gray 2             Charcoal
 .hover-color { color: #5EBF9F;}
 /* placeholder text color */
 .placeholder-color { color: #BBBBBB;}
-
 
 
 /* -- ------------ --
@@ -120,6 +122,11 @@ Dark Gray 1             Dark Gray 2             Charcoal
 
 
 /*    -- Result / Instruction Section  -- */
+
+.section-instructions {
+    margin-bottom: 70px;
+}
+
 .banner {
     width: 100%;
     text-align: center;
@@ -128,7 +135,16 @@ Dark Gray 1             Dark Gray 2             Charcoal
     margin-bottom: 30px;
 }
 
-
+.instruct-number { 
+    display: inline-block;
+}
+.instruct { 
+    display: inline-block;
+    padding-left: 16px;
+}
+.instruct-block {
+    padding-bottom: 10px;
+}
 
 /*    -- Impact Section  -- */
 
@@ -142,8 +158,8 @@ Dark Gray 1             Dark Gray 2             Charcoal
 }
 .impact-block {
     max-width: 245px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }   
 
 .section-title {
@@ -169,6 +185,64 @@ p.carbon-footprint-unit {
 }
 .carbon-footprint-unit { margin-left: 4px;}
 
+
+
+/*    -- Map Section  -- */
+
+.section-map {margin-top: 70px;}
+.map-title {margin-bottom: 20px;}
+.map-container{
+    overflow:hidden; 
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+.map-container iframe{
+    left:0;
+    top:0; 
+    height:100%;
+    max-height: 425px;
+    width:100%;
+    max-width: 550px;
+    position:absolute;
+    }
+
+
+/* map results */
+.iframe-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 550px;
+    /* Calculated from the aspect ratio of the content (in case of 16:9 it is 9/16= 0.5625) */
+    /* padding-top: 56.25%; */
+    position: relative;
+    }
+/* setting max width of address block */
+.map-addr-block { max-width: 337px;}   
+/* setting width of row of map icons */
+.map-icons { 
+    max-width: 337px;
+    padding-top: 0px;
+}
+/* setting max width of address field so it fits nicely in block*/
+.map-addr { max-width: 204px;}
+
+/* separator line between map results */
+.my-4 {
+    width: 90%;
+}
+    
+/* .iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    } */
+
+
+/* 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
 
@@ -178,4 +252,4 @@ p.carbon-footprint-unit {
 @media (min-width: 992px) { ... }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { ... } */
