@@ -194,8 +194,11 @@ p.carbon-footprint-unit {
 
 
 /*    -- Map Section  -- */
-
-.section-map {margin-top: 70px;}
+.column-map-results {
+    max-height: 425px;
+    overflow: auto;
+}
+.section-map {margin-top: 70px; margin-bottom: 70px;}
 .map-title {margin-bottom: 20px;}
 .map-container{
     overflow:hidden; 
