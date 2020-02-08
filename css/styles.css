@@ -30,6 +30,11 @@ h1, h2, h3, h4, p {
     font-size: 18px;
 }
 
+.thumbnail-title {
+    font-size: 14px;
+    font-weight: 200;
+}
+
 /* global border radius */
 .recycle-borders { border-radius: 4px;}
 
@@ -157,15 +162,16 @@ Dark Gray 1             Dark Gray 2             Charcoal
     text-align: center;
 }
 .impact-block {
-    max-width: 245px;
+    max-width: 337px;
     padding-top: 70px;
     padding-bottom: 70px;
 }   
 
 .section-title {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .impact-block p{
@@ -174,16 +180,16 @@ Dark Gray 1             Dark Gray 2             Charcoal
     line-height: 125%;
     /* or 25px */
 
-    max-width: 245px;
+    max-width: 337px;
     text-align: center;
 }
-
+.carbon-footprint { margin-top: 10px;}
 p.carbon-footprint-unit {
    
     margin-bottom: 0px;
     line-height: 125%;
 }
-.carbon-footprint-unit { margin-left: 4px;}
+.carbon-footprint-unit { margin-left: 10px;}
 
 
 
@@ -218,14 +224,14 @@ p.carbon-footprint-unit {
     position: relative;
     }
 /* setting max width of address block */
-.map-addr-block { max-width: 337px;}   
+.map-addr-block { max-width: 337px; font-weight: 200;}   
 /* setting width of row of map icons */
 .map-icons { 
     max-width: 337px;
     padding-top: 0px;
 }
 /* setting max width of address field so it fits nicely in block*/
-.map-addr { max-width: 204px;}
+.map-addr { max-width: 184px;}
 
 /* separator line between map results */
 .my-4 {
