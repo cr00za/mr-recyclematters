@@ -60,25 +60,25 @@
                         </div>
         
                         <ul class="carousel-indicators list-inline d-flex justify-content-between thumbnail-title">
-                            <li id="caro-0" class="list-inline-item active my-img">
+                            <li id="caro-0" class="list-inline-item active my-img" onclick = "changeBlock1()">
                                 <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel">
                                     <img src="../images/fluorescent-bulb.jpg" class="img-fluid recycle-borders" id="Fluorescent" alt="Fluorescent Bulb">
                                 </a>
                                 <p class="d-flex justify-content-center">Fluorescent</p>
                             </li>
-                            <li id="caro-1" class="list-inline-item my-img">
+                            <li id="caro-1" class="list-inline-item my-img" onclick = "changeBlock2()">
                                 <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
                                     <img src="../images/led-bulb.jpg" class="img-fluid recycle-borders" id="LED" alt="LED Bulb">
                                 </a>
                                 <p class="d-flex justify-content-center">LED</p>
                             </li>
-                            <li id="caro-2" class="list-inline-item my-img">
+                            <li id="caro-2" class="list-inline-item my-img" onclick = "changeBlock3()">
                                 <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
                                     <img src="../images/halogen-bulb.jpg" class="img-fluid recycle-borders" id="Halogen" alt="Halogen Bulb">
                                 </a>
                                 <p class="d-flex justify-content-center">Halogen</p>
                             </li>
-                            <li id="caro-3" class="list-inline-item my-img">
+                            <li id="caro-3" class="list-inline-item my-img" onclick = "changeBlock4()">
                                 <a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
                                     <img src="../images/incandescent-bulb.jpg" class="img-fluid recycle-borders"
                                     id="Incandescent" alt="Incandescent Bulb">
@@ -90,28 +90,98 @@
                 </div>
 
                 <div class="col-12 col-md-6 column-instructions">
-                    <div class="highlighter banner title-color-dark recycle-borders">
-                        <h3 class="recycle-h3">This item has special recycling instructions!</h3>
+                    <div id = "div1" style="display:block">
+                        <div class="highlighter banner title-color-dark recycle-borders">
+                            <h3 class="recycle-h3">This item has special recycling instructions!</h3>
+                        </div>
+    
+                        <h2 class="recycle-h2 text-color-dark d-flex justify-content-center instruct-block-title">Fluorescent Bulb Instructions</h2>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>1</strong></p>
+                            <p class="instruct text-color-dark">Unplug the power source or turn off the light switch to the light bulb</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>2</strong></p>
+                            <p class="instruct text-color-dark">Remove bulb from socket once it has cooled down</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>3</strong></p>
+                            <p class="instruct text-color-dark">Wrap bulb in old newspapers or papertowels to prevent breakage</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>4</strong></p>
+                            <p class="instruct text-color-dark">Take the wrapped bulb to one of the facilities listed below</p></div>
+                        <div></div>
                     </div>
-
-                    <h2 class="recycle-h2 text-color-dark d-flex justify-content-center instruct-block-title">Fluorescent Bulb Instructions</h2>
-                    <div class="d-flex instruct-block">
-                        <p class="instruct-number"><strong>1</strong></p>
-                        <p class="instruct text-color-dark">Unplug the power source or turn off the light switch to the light bulb</p></div>
-                    <div></div>
-                    <div class="d-flex instruct-block">
-                        <p class="instruct-number"><strong>2</strong></p>
-                        <p class="instruct text-color-dark">Remove bulb from socket once it has cooled down</p></div>
-                    <div></div>
-                    <div class="d-flex instruct-block">
-                        <p class="instruct-number"><strong>3</strong></p>
-                        <p class="instruct text-color-dark">Wrap bulb in old newspapers or papertowels to prevent breakage</p></div>
-                    <div></div>
-                    <div class="d-flex instruct-block">
-                        <p class="instruct-number"><strong>4</strong></p>
-                        <p class="instruct text-color-dark">Take the wrapped bulb to one of the facilities listed below</p></div>
-                    <div></div>
-
+                    <div id = "div2" style="display:none">
+                        <div class="highlighter banner title-color-dark recycle-borders">
+                            <h3 class="recycle-h3">This item can be recycled with regular trash</h3>
+                        </div>
+    
+                        <h2 class="recycle-h2 text-color-dark d-flex justify-content-center instruct-block-title">LED Bulb Instructions</h2>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>1</strong></p>
+                            <p class="instruct text-color-dark">Unplug the power source or turn off the light switch to the light bulb</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>2</strong></p>
+                            <p class="instruct text-color-dark">Remove bulb from socket once it has cooled down</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>3</strong></p>
+                            <p class="instruct text-color-dark">Wrap bulb in old newspapers or papertowels to prevent breakage</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>4</strong></p>
+                            <p class="instruct text-color-dark">Put wrapped bulb in a marked bag and dispose of in the trash</p></div>
+                        <div></div>
+                    </div>
+                    <div id = "div3" style="display:none">
+                        <div class="highlighter banner title-color-dark recycle-borders">
+                            <h3 class="recycle-h3">This item can be recycled with regular trash</h3>
+                        </div>
+    
+                        <h2 class="recycle-h2 text-color-dark d-flex justify-content-center instruct-block-title">Halogen Bulb Instructions</h2>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>1</strong></p>
+                            <p class="instruct text-color-dark">Unplug the power source or turn off the light switch to the light bulb</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>2</strong></p>
+                            <p class="instruct text-color-dark">Remove bulb from socket once it has cooled down</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>3</strong></p>
+                            <p class="instruct text-color-dark">Wrap bulb in old newspapers or papertowels to prevent breakage</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>4</strong></p>
+                            <p class="instruct text-color-dark">Put wrapped bulb in a marked bag and dispose of in the trash</p></div>
+                        <div></div>
+                    </div>
+                    <div id = "div4" style="display:none">
+                        <div class="highlighter banner title-color-dark recycle-borders">
+                            <h3 class="recycle-h3">This item can be recycled with regular trash</h3>
+                        </div>
+    
+                        <h2 class="recycle-h2 text-color-dark d-flex justify-content-center instruct-block-title">Incandescent Bulb Instructions</h2>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>1</strong></p>
+                            <p class="instruct text-color-dark">Unplug the power source or turn off the light switch to the light bulb</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>2</strong></p>
+                            <p class="instruct text-color-dark">Remove bulb from socket once it has cooled down</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>3</strong></p>
+                            <p class="instruct text-color-dark">Wrap bulb in old newspapers or papertowels to prevent breakage</p></div>
+                        <div></div>
+                        <div class="d-flex instruct-block">
+                            <p class="instruct-number"><strong>4</strong></p>
+                            <p class="instruct text-color-dark">Put wrapped bulb in a marked bag and dispose of in the trash</p></div>
+                        <div></div>
+                    </div>
                 </div>
 
             </div>

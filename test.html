@@ -11,14 +11,25 @@
     <link rel="stylesheet" href="css/teststyles.css">
 </head>
   <body>
-    <ul>
-        <li><img src="https://fourmuddypaws.com/wp-content/uploads/2014/05/bulldog-puppies-playing-e1401294368290.jpg" id="puppies" alt="puppies"/></li>
-        <li><img src="https://4ourpaws.org.za/wp-content/uploads/2017/04/Kittens-200x200.jpg" id="kittens" alt="kittens"/></li>
-        <li><img src="https://static.turbosquid.com/Preview/2014/05/24__18_40_00/aardvark-05.jpg3ef0a5ec-c80e-44aa-8dfa-dcc2758906a6Res200.jpg" id="aardvark" alt="aardvark"/></li>
-      </ul>
-      
-      <div>Click on the picture for description.</div>
-    
+    <div class="d-flex justify-content-sm-start">
+        <!-- <a class="btn btn-primary btn-sm toggle" href="#" role="button">Contact me</a> -->
+        <a onclick = "changeBlock1()" type="button" class="btn btn-primary toggle" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" >Contact me</a>
+    </div>
+    <div class="d-flex justify-content-sm-start">
+        <!-- <a class="btn btn-primary btn-sm toggle" href="#" role="button">Contact me</a> -->
+        <a onclick = "changeBlock2()" type="button" class="btn btn-primary toggle" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" >Contact me</a>
+    </div>
+    <div class="d-flex justify-content-sm-start">
+        <!-- <a class="btn btn-primary btn-sm toggle" href="#" role="button">Contact me</a> -->
+        <a onclick = "changeBlock3()" type="button" class="btn btn-primary toggle" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" >Contact me</a>
+    </div>
+    <button onclick = "changeBlock1()"></button>
+    <button onclick = "changeBlock2()"></button>
+    <button onclick = "changeBlock3()"></button>
+
+    <div id = "div1" style="display:block">Hello</div>
+    <div id = "div2" style="display:none">Goodbye</div>
+    <div id = "div3" style="display:none">Get up</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
