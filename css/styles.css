@@ -181,8 +181,9 @@ li.list-inline-item {
 .active a img{
         /* display: block; */
         border-style: solid;
-        border-width: 1px;
+        border-width: 2px;
         border-color: #2FD09A;
+        box-shadow: 0px 4px 4px rgba(47, 208, 154, 0.05);
     }
 
 .my-img {
