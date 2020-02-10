@@ -8,34 +8,97 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/teststyles.css">
-</head>
+    <link rel="stylesheet" href="css/general-styles.css">
+  
+  </head>
   <body>
-    <div class="d-flex justify-content-sm-start">
-        <!-- <a class="btn btn-primary btn-sm toggle" href="#" role="button">Contact me</a> -->
-        <a onclick = "changeBlock1()" type="button" class="btn btn-primary toggle" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" >Contact me</a>
-    </div>
-    <div class="d-flex justify-content-sm-start">
-        <!-- <a class="btn btn-primary btn-sm toggle" href="#" role="button">Contact me</a> -->
-        <a onclick = "changeBlock2()" type="button" class="btn btn-primary toggle" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" >Contact me</a>
-    </div>
-    <div class="d-flex justify-content-sm-start">
-        <!-- <a class="btn btn-primary btn-sm toggle" href="#" role="button">Contact me</a> -->
-        <a onclick = "changeBlock3()" type="button" class="btn btn-primary toggle" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" >Contact me</a>
-    </div>
-    <button onclick = "changeBlock1()"></button>
-    <button onclick = "changeBlock2()"></button>
-    <button onclick = "changeBlock3()"></button>
 
-    <div id = "div1" style="display:block">Hello</div>
-    <div id = "div2" style="display:none">Goodbye</div>
-    <div id = "div3" style="display:none">Get up</div>
+    <!-- --------------------- -->
+    <!--         NAVBAR        -->
+    <!-- --------------------- -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top navbar-light marginLeft-sm marginRight-sm background-dark" id="nav">
+      <div class="navSpacer flex-grow-1 d-flex">
+          <a class="navbar-brand " href="index.html"><img id="logo" src="../images/RM logo.svg" alt="Logo"></a>
+      </div>   
+      
+      <div class="flex-grow-1 d-flex">
+        <form class="form-inline flex-nowrap mx-0 mx-lg-auto">
+          <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
+          <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
+        </form>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link title-color-light" href="#">About</a>
+          <a class="nav-item nav-link js-anchor-link title-color-light" href="#myProcess">A-Z Index</a>
+          <a class="nav-item nav-link js-anchor-link title-color-light" href="#portfolio">Location</a>
+          <a class="nav-item nav-link js-anchor-link title-color-light" href="#aboutMe">News</a>
+          <a class="nav-item nav-link js-anchor-link toggle title-color-light" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" href="#contactMe" >Contact</a>
+        </div>
+      </div>
+    </nav> 
+  
+    <!-- --------------------- -->
+    <!--         HERO          -->
+    <!-- --------------------- -->
+
+ 
+
+<div style="background-image: url('../images/hero-pic');">
+      <img class="background-light" src="images/heropicdark.jpg">
+      <img class="logoImage hero-text" src="images/Recycle Matters logo.png">
+      <div class="myHeroText">
+        <p>What's the matter?</p>
+      </div>
+        
+      <div class="flex-grow-1 d-flex">
+        <form class="form-inline flex-nowrap mx-0 mx-lg-auto">
+          <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
+          <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
+        </form>
+      </div>
+
+        <p>Search "batteries", "plastic bags", "lightbulbs", etc.</p>
+      </div>   
+    </div> 
+</div>
+
+
+
+<!-- ===================================================== -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand flex-grow-1" href="#">Aditya Shrivastava</a>
+      <div class="flex-grow-1 d-flex">
+          <form class="form-inline flex-nowrap bg-light mx-0 mx-lg-auto rounded p-1">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="#">Twitter</a>
+              <a class="nav-item nav-link" href="#">Resume</a>
+              <a class="nav-item nav-link" href="#">Blog</a>
+          </div>
+      </div>
+  </nav> -->
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/interaction.js"></script>
-</body>
+  </body>
 </html>

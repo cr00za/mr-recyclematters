@@ -1,0 +1,82 @@
+/* -- --------------------------- --
+   --   HOME PAGE (Index) Styles  --
+   -- --------------------------- -- */
+
+
+
+
+/* body{
+    height: 100%;
+}
+       */
+
+.background-light {
+    /* Set rules to fill background */
+    /* min-height: 100%; */
+    /* min-width: 1024px; */
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+}
+  /* Place text in the middle of the image */
+  /* .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    max-width: 300px;
+  } */
+
+  /* .myHeroText{
+      position: absolute;
+      text-align: center;
+      color: #F6F6F6;
+      font-size: 32px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 60%;
+      min-width: 300px;
+      font-family: Acumin Pro;
+    font-weight: 700; 
+    
+
+  } */
+
+  /* .myNavBar{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 70%;
+      min-width: 300px;
+      max-width: 500px;
+
+  } */
+  /* .searchButton{
+      width: 50px;
+      border-radius: 4px;
+  } */
+
+  /* .searchHelp{
+    position: absolute;
+    text-align: center;
+    color: #eeeeee;
+    font-size: 14px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 78%;
+    min-width: 300px;
+    font-weight: lighter;
+  }
+  .myform-inline{
+    flex-flow: nowrap;
+  }
+  .mySearchButton{
+      margin-left: 10px;
+  }
+© 2020 GitHub, Inc. */

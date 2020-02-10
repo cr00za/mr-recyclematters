@@ -1,0 +1,157 @@
+
+/* -- ------------ --
+   -- CSS / STYLES --
+   -- ------------ -- */
+
+/* Global Reset */
+
+h1, h2, h3, h4, p {
+    margin: 0px !important; 
+    line-height: 125% !important;
+    font-family: Acumin Pro;
+}
+
+.container {
+    max-width: 1080px;
+}
+/* page title - recycle matters h1 */
+.recycle-h1 {
+    font-family: Acumin Pro;
+    font-weight: 700; 
+    font-size: 46px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.recycle-h2 {
+    font-family: Acumin Pro;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.recycle-h3 {
+    font-family: Acumin Pro;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.thumbnail-title {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/* global border radius */
+.recycle-borders { border-radius: 4px !important;}
+
+
+/* ---------------------------------------- */
+
+/* --    Main Colors    --
+
+Dark Cerulean           Deep Space Sparkle                
+#02437B                 #465F75                 
+
+Pale Cerulean           Lavender Gray 
+#98C1D9                 #BECBD2
+
+Stil de Grain Yellow    Flax
+#FADF63                 #E9D88A
+
+Mountain Meadow         Green Sheen
+#2FD09A                 #5EBF9F
+--------------------
+white                   Soft White
+#FFFFFF                 #F6F6F6
+
+Gray 1                  Gray 2
+#EEEEEE                 #DDDDDD
+
+Med. Gray 1             Med. Gray 2
+#BBBBBB                 #8888888
+
+Dark Gray 1             Dark Gray 2             Charcoal
+#777777                 #454545                 #333635
+*/
+
+/* ---------------------------------------- */
+
+/* -- Colors applied to text and backgrounds --
+
+/* dark-mode background color */
+.background-dark { background-color: #465F75;}
+/* light-mode background color */
+.background-light { background-color: #F6F6F6;}
+/* dark color for heading elements - hierachy - light background */
+.title-color-dark { color:#333635; }
+/* dark color for sub elements - hierachy - light background */
+.text-color-dark { color: #454545;}
+/* map text color for better hierarchy */
+.map-text-color-dark { color: #777777;}
+/* light color for heading elements - hierachy - dark background */
+.title-color-light { color: #F6F6F6 !important;}
+/* light color for sub elements - hierachy - dark background */
+.text-color-light { color: #F6F6F6;}
+/* warning color - highlight for instructions */
+.highlighter { background-color: #FADF63;}
+/* isolation color - normal state background*/
+.isolation-color { background-color: #2FD09A !important;}
+/* isolation color - text */
+.isolation-color-text { color: #2FD09A;}
+/* isolation color - hover state background*/
+.hover-color { background-color: #5EBF9F !important;}
+/* placeholder text color */
+.placeholder-color { color: #BBBBBB;}
+/* transparent background color give get rid of modal edges poking out*/
+.transparent-background {background-color: rgba(255, 255, 255, 0) !important;}
+/* set border width to zero to get rid of bootstrap lines */
+.rm-border {border-width: 0px !important;}
+
+/* Bootstrap Button styling */
+.btn-primary {
+    background: #2FD09A !important;
+    color: #F6F6F6 !important;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #5EBF9F !important;
+}
+ 
+.navbar-toggler {
+    color: #287094;
+    /* rgba(2, 50, 70, 1); */
+    border-color: rgba(2,50,70,.1);
+}
+
+/* Set navbar text weight to thin when not active */
+.navbar {
+    font-weight: 300;
+    font-size: 16px ;
+    margin: auto; 
+}
+/* placeholder text */
+.placeholder-text {
+    font-family: Acumin Pro;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#logo {width: 100px;}
+
+/* -- ------------ --
+   --   NAVBAR   --
+   -- ------------ -- */
+
+.mySearchButton {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-color: rgba(255, 255, 255, 0);
+}
+ .searchbar{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px;
+    height: 40px;
+    z-index 20;
+}
+.myFooter {
+    background-color: #465F75;
+}

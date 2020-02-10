@@ -19,301 +19,83 @@
     <!-- General CSS -->
     <link rel=“stylesheet” href=“https://use.typekit.net/lut2jcj.css”>
     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/general-styles.css">
+    <link rel="stylesheet" href="css/index-styles.css">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      
-    <!-- ------------ -->
-    <!-- INSTRUCTIONS -->
-    <!-- ------------ -->
+
+
+    <!-- --------------------- -->
+    <!--         NAVBAR        -->
+    <!-- --------------------- -->
+ <header>
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top navbar-light marginLeft-sm marginRight-sm background-dark" id="nav">
+    <div class="navSpacer flex-grow-1 d-flex">
+        <a class="navbar-brand " href="index.html"><img id="logo" src="../images/RM logo.svg" alt="Logo"></a>
+    </div>   
+    
+    <div class="flex-grow-1 d-flex">
+      <form class="form-inline flex-nowrap mx-0 mx-lg-auto">
+        <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
+        <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
+      </form>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon "></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link title-color-light" href="#">About</a>
+        <a class="nav-item nav-link js-anchor-link title-color-light" href="#myProcess">A-Z Index</a>
+        <a class="nav-item nav-link js-anchor-link title-color-light" href="#portfolio">Location</a>
+        <a class="nav-item nav-link js-anchor-link title-color-light" href="#aboutMe">News</a>
+        <a class="nav-item nav-link js-anchor-link toggle title-color-light" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" href="#contactMe" >Contact</a>
+      </div>
+    </div>
+  </nav>
+ </header>
  
-            <div class="row d-flex justify-content-center">
-                <h1 class="recycle-h1 title-color-dark">Light Bulbs</h1>
-            </div>
-    <div class="container-fluid section-instructions">
-        <div class="container">
-            <div class="row">
-                <div class=" col-12 col-md-6 carousel-fade column-material-type" id="slider">
-                    <div id="myCarousel" class="carousel slide ">
-                        <!-- main slider carousel items -->
-                        <div class="carousel-inner recycle-borders">
-                            <div class="active carousel-item" data-slide-number="0">
-                                <img src="../images/fluorescent-bulb.jpg" class="img-fluid">
-                            </div>
-                            <div class="carousel-item" data-slide-number="1">
-                                <img src="../images/led-bulb.jpg" class="img-fluid">
-                            </div>
-                            <div class="carousel-item" data-slide-number="2">
-                                <img src="../images/halogen-bulb.jpg" class="img-fluid">
-                            </div>
-                            <div class="carousel-item" data-slide-number="3">
-                                <img src="../images/incandescent-bulb.jpg" class="img-fluid">
-                            </div>
-        
-                        </div>
-                        <!-- main slider carousel nav controls -->
-                        <div class="material-title-background recycle-borders d-flex justify-content-center align-items-center">
-                            <h3 class="material-title"> Fluorescent Bulb</h3>
-                        </div>
-        
-                        <ul class="carousel-indicators list-inline d-flex justify-content-between thumbnail-title">
-                            <li id="caro-0" class="list-inline-item active my-img" onclick = "changeBlock1()">
-                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel">
-                                    <img src="../images/fluorescent-bulb.jpg" class="img-fluid recycle-borders" id="Fluorescent" alt="Fluorescent Bulb">
-                                </a>
-                                <p class="d-flex justify-content-center">Fluorescent</p>
-                            </li>
-                            <li id="caro-1" class="list-inline-item my-img" onclick = "changeBlock2()">
-                                <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
-                                    <img src="../images/led-bulb.jpg" class="img-fluid recycle-borders" id="LED" alt="LED Bulb">
-                                </a>
-                                <p class="d-flex justify-content-center">LED</p>
-                            </li>
-                            <li id="caro-2" class="list-inline-item my-img" onclick = "changeBlock3()">
-                                <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
-                                    <img src="../images/halogen-bulb.jpg" class="img-fluid recycle-borders" id="Halogen" alt="Halogen Bulb">
-                                </a>
-                                <p class="d-flex justify-content-center">Halogen</p>
-                            </li>
-                            <li id="caro-3" class="list-inline-item my-img" onclick = "changeBlock4()">
-                                <a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
-                                    <img src="../images/incandescent-bulb.jpg" class="img-fluid recycle-borders"
-                                    id="Incandescent" alt="Incandescent Bulb">
-                                </a>
-                                <p class="d-flex justify-content-center">Incandescent</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+<main>
 
-                <div class="col-12 col-md-6 column-instructions">
-                    <div id = "div1" style="display:block">
-                        <div class="highlighter banner title-color-dark recycle-borders">
-                            <h3 class="recycle-h3">This item has special recycling instructions!</h3>
-                        </div>
-    
-                        <h2 class="recycle-h2 text-color-dark d-flex justify-content-center instruct-block-title">Fluorescent Bulb Instructions</h2>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>1</strong></p>
-                            <p class="instruct text-color-dark">Unplug the power source or turn off the light switch to the light bulb</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>2</strong></p>
-                            <p class="instruct text-color-dark">Remove bulb from socket once it has cooled down</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>3</strong></p>
-                            <p class="instruct text-color-dark">Wrap bulb in old newspapers or papertowels to prevent breakage</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>4</strong></p>
-                            <p class="instruct text-color-dark">Take the wrapped bulb to one of the facilities listed below</p></div>
-                        <div></div>
-                    </div>
-                    <div id = "div2" style="display:none">
-                        <div class="highlighter banner title-color-dark recycle-borders">
-                            <h3 class="recycle-h3">This item can be recycled with regular trash</h3>
-                        </div>
-    
-                        <h2 class="recycle-h2 text-color-dark d-flex justify-content-center instruct-block-title">LED Bulb Instructions</h2>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>1</strong></p>
-                            <p class="instruct text-color-dark">Unplug the power source or turn off the light switch to the light bulb</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>2</strong></p>
-                            <p class="instruct text-color-dark">Remove bulb from socket once it has cooled down</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>3</strong></p>
-                            <p class="instruct text-color-dark">Wrap bulb in old newspapers or papertowels to prevent breakage</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>4</strong></p>
-                            <p class="instruct text-color-dark">Put wrapped bulb in a marked bag and dispose of in the trash</p></div>
-                        <div></div>
-                    </div>
-                    <div id = "div3" style="display:none">
-                        <div class="highlighter banner title-color-dark recycle-borders">
-                            <h3 class="recycle-h3">This item can be recycled with regular trash</h3>
-                        </div>
-    
-                        <h2 class="recycle-h2 text-color-dark d-flex justify-content-center instruct-block-title">Halogen Bulb Instructions</h2>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>1</strong></p>
-                            <p class="instruct text-color-dark">Unplug the power source or turn off the light switch to the light bulb</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>2</strong></p>
-                            <p class="instruct text-color-dark">Remove bulb from socket once it has cooled down</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>3</strong></p>
-                            <p class="instruct text-color-dark">Wrap bulb in old newspapers or papertowels to prevent breakage</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>4</strong></p>
-                            <p class="instruct text-color-dark">Put wrapped bulb in a marked bag and dispose of in the trash</p></div>
-                        <div></div>
-                    </div>
-                    <div id = "div4" style="display:none">
-                        <div class="highlighter banner title-color-dark recycle-borders">
-                            <h3 class="recycle-h3">This item can be recycled with regular trash</h3>
-                        </div>
-    
-                        <h2 class="recycle-h2 text-color-dark d-flex justify-content-center instruct-block-title">Incandescent Bulb Instructions</h2>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>1</strong></p>
-                            <p class="instruct text-color-dark">Unplug the power source or turn off the light switch to the light bulb</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>2</strong></p>
-                            <p class="instruct text-color-dark">Remove bulb from socket once it has cooled down</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>3</strong></p>
-                            <p class="instruct text-color-dark">Wrap bulb in old newspapers or papertowels to prevent breakage</p></div>
-                        <div></div>
-                        <div class="d-flex instruct-block">
-                            <p class="instruct-number"><strong>4</strong></p>
-                            <p class="instruct text-color-dark">Put wrapped bulb in a marked bag and dispose of in the trash</p></div>
-                        <div></div>
-                    </div>
-                </div>
+    <!-- --------------------- -->
+    <!--         HERO          -->
+    <!-- --------------------- -->
 
+    <div class="container d-flex justify-content-center">
+      
+      <div class="row pt-5">
+        <div class="col-12">
+            <img class="logoImage" src="images/Recycle Matters logo.png">
+      
+            <div class="flex-grow-1 d-flex main-search" style="z-index: 25;">
+              <form class="form-inline flex-nowrap mx-0 mx-lg-auto">
+                <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
+                <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
+              </form>
             </div>
         </div>
-    </div>
-
-    <!-- ------------ -->
-    <!--    IMPACT    -->
-    <!-- ------------ -->
-    <div class="container-fluid section-impact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="impact-block">
-                        <h2 class="section-title title-color-light">IMPACT</h2>
-                        <p class="text-color-light">By recycling one light bulb<br>you can reduce your <a href="https://www.carbontrust.com/resources/guides/carbon-footprinting-and-reporting/carbon-footprinting/" class="isolation-color">carbon footprint</a> by:</p>
-                        <div class="carbon-footprint text-color-light d-flex justify-content-center">
-                            <img src="../images/footprint.svg" alt="">
-                            <div class="carbon-footprint-unit">
-                                <p><strong>.34 tons CO2/ton</strong><br>Carbon Footprint</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ------------ -->
-    <!--      MAP     -->
-    <!-- ------------ -->
-    <div class="container-fluid section-map">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 d-flex justify-content-between map-title">
-                    <h2 class="recycle-h2">Recycling Centers nearby</h2>
-                    <div>
-                        <a href="">Change</a>
-                        <img src="../images/location.svg" alt="location icon">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 column-map">
-                    <!--Google map-->
-                    <div id="map-container" class="z-depth-1-half map-container recycle-borders" style="height: 425px">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d26535.41052393508!2d-84.3930054!3d33.7625699!3m2!1i1024!2i768!4f13.1!2m1!1sRecycling%20centers%20near%20Global%20Learning%20and%20Conference%20Center!5e0!3m2!1sen!2sus!4v1581141074452!5m2!1sen!2sus" width="550" height="425" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 column-map-results recycle-borders">
-                    <div class="iframe-container results-frame ">
-                        <h3 class="recycle-h3 title-color-dark">Thompson Recycling Center</h3>
-                        <div class="d-flex map-text-color-dark map-addr-block">
-                            <div class="map-addr">
-                                <p>832-778 Juniper St NE, Atlanta, GA 30308</p>
-                                <a href="">(404) 343-6783</a>
-                            </div>
-                            <p class="">Hours M-F<br>9a-5p</p>
-                        </div>
-                        <div class="d-flex justify-content-between map-icons thumbnail-title">
-                            <img src="../images/phone-icon.svg" alt="phone call icon">
-                            <img src="../images/gmap-open-icon.svg" alt="google maps icon">
-                            <div class="d-flex flex-column justify-content-center map-text-color-dark" style="padding-top: 20px">
-                                <img src="../images/directions-icon.svg" alt="directions icon">
-                                <p>0.6 miles away</p>
-                            </div>
-                        </div>
-                        <hr class="my-4">
-
-                        <h3 class="recycle-h3 title-color-dark">ReMix Recycling, LLC</h3>
-                        <div class="d-flex map-text-color-dark map-addr-block justify-content-between">
-                            <div class="map-addr">
-                                <p>400 Northside Dr NW, Atlanta, GA 30318</p>
-                                <a href="">(404) 663-0413</a>
-                            </div>
-                            <p class="">Hours M-F<br>9a-5p</p>
-                            <p class="">Sat, Sun<br>11a-5p</p>
-                        </div>
-                        <div class="d-flex justify-content-between map-icons thumbnail-title">
-                            <img src="../images/phone-icon.svg" alt="phone call icon">
-                            <img src="../images/gmap-open-icon.svg" alt="google maps icon">
-                            <div class="d-flex flex-column justify-content-center map-text-color-dark" style="padding-top: 20px">
-                                <img src="../images/directions-icon.svg" alt="directions icon">
-                                <p>1.2 miles away</p>
-                            </div>
-                        </div>
-                        <hr class="my-4">
-
-                        <h3 class="recycle-h3 title-color-dark">Thompson Recycling Center</h3>
-                        <div class="d-flex map-text-color-dark map-addr-block">
-                            <div class="map-addr">
-                                <p>832-778 Juniper St NE, Atlanta, GA 30308</p>
-                                <a href="">(404) 343-6783</a>
-                            </div>
-                            <p class="">Hours M-F<br>9a-5p</p>
-                        </div>
-                        <div class="d-flex justify-content-between map-icons thumbnail-title">
-                            <img src="../images/phone-icon.svg" alt="phone call icon">
-                            <img src="../images/gmap-open-icon.svg" alt="google maps icon">
-                            <div class="d-flex flex-column justify-content-center map-text-color-dark" style="padding-top: 20px">
-                                <img src="../images/directions-icon.svg" alt="directions icon">
-                                <p>1.7 miles away</p>
-                            </div>
-                        </div>
-                        <hr class="my-4">
-                    </div>
-                </div>
-
-            </div>
+      
         </div>
     </div>
 
 
 
 
+</main>
 
 
 
-
-
-
-
-
-
-
-
+<!-- Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/interaction.js"></script>
   </body>
 </html>
