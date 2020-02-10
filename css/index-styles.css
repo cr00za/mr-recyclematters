@@ -29,16 +29,23 @@ body {
   width: 303px !important;
   }
 
+
+  /* breathing room between the last row and the footer of the main page */
+  .main-page-bottom-padding { padding-bottom: 160px;}
+
 /* .main-search {padding-bottom: 80px;} */
 @media (min-width: 576px) { 
   
-  /* setting width of search bar a little biggle for larger size devices */
+  /* setting width of search bar a little bigger for larger size devices */
   .rm-hero {
     width: 100%;
     max-width: 394px;}
   .searchbar-homepage {
     width: 384px !important;
   }
+
+   /* breathing room between the last row and the footer of the main page */
+   .main-page-bottom-padding { padding-bottom: 240px;}
  }
 
 

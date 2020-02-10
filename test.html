@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/general-styles.css">
+    <link rel="stylesheet" href="css/general-styles.css">
+    <link rel="stylesheet" href="css/index-styles.css">
   
   </head>
   <body>
@@ -16,81 +18,221 @@
     <!-- --------------------- -->
     <!--         NAVBAR        -->
     <!-- --------------------- -->
- 
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top navbar-light marginLeft-sm marginRight-sm background-dark" id="nav">
-      <div class="navSpacer flex-grow-1 d-flex">
-          <a class="navbar-brand " href="index.html"><img id="logo" src="../images/RM logo.svg" alt="Logo"></a>
-      </div>   
-      
-      <div class="flex-grow-1 d-flex">
-        <form class="form-inline flex-nowrap mx-0 mx-lg-auto">
-          <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
-          <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
-        </form>
-      </div>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon "></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link title-color-light" href="#">About</a>
-          <a class="nav-item nav-link js-anchor-link title-color-light" href="#myProcess">A-Z Index</a>
-          <a class="nav-item nav-link js-anchor-link title-color-light" href="#portfolio">Location</a>
-          <a class="nav-item nav-link js-anchor-link title-color-light" href="#aboutMe">News</a>
-          <a class="nav-item nav-link js-anchor-link toggle title-color-light" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" href="#contactMe" >Contact</a>
-        </div>
-      </div>
-    </nav> 
-  
-    <!-- --------------------- -->
-    <!--         HERO          -->
-    <!-- --------------------- -->
-
- 
-
-<div style="background-image: url('../images/hero-pic');">
-      <img class="background-light" src="images/heropicdark.jpg">
-      <img class="logoImage hero-text" src="images/Recycle Matters logo.png">
-      <div class="myHeroText">
-        <p>What's the matter?</p>
-      </div>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-custom fixed-top navbar-light marginLeft-sm marginRight-sm background-light" id="nav">
+        <div class="navSpacer flex-grow-1 d-flex">
+            <a class="navbar-brand " href="index.html"><img id="logo" src="../images/RM logo.svg" alt="Logo"></a>
+        </div>   
         
-      <div class="flex-grow-1 d-flex">
-        <form class="form-inline flex-nowrap mx-0 mx-lg-auto">
-          <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
-          <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
-        </form>
-      </div>
-
-        <p>Search "batteries", "plastic bags", "lightbulbs", etc.</p>
-      </div>   
-    </div> 
-</div>
-
-
-
-<!-- ===================================================== -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand flex-grow-1" href="#">Aditya Shrivastava</a>
-      <div class="flex-grow-1 d-flex">
-          <form class="form-inline flex-nowrap bg-light mx-0 mx-lg-auto rounded p-1">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+        <div class="flex-grow-1 d-flex ">
+          <form class="form-inline flex-nowrap mx-0 mx-lg-auto hide">
+            <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
+            <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
           </form>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        </div>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="#">Twitter</a>
-              <a class="nav-item nav-link" href="#">Resume</a>
-              <a class="nav-item nav-link" href="#">Blog</a>
+            <a class="nav-item nav-link title-color-dark" href="#">About</a>
+            <a class="nav-item nav-link js-anchor-link title-color-dark" href="atoz.html">A-Z Index</a>
+            <a class="nav-item nav-link js-anchor-link title-color-dark" href="">Location</a>
+            <a class="nav-item nav-link js-anchor-link title-color-dark" href="">News</a>
+            <a class="nav-item nav-link js-anchor-link toggle title-color-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" href="#contactMe" >Contact</a>
+          </div>
+        </div>
+      </nav>
+     </header>
+     
+    <main>
+    
+        <!-- --------------------- -->
+        <!--         HERO          -->
+        <!-- --------------------- -->
+    
+        <div class="container ">
+          
+          <div class="row pt-5">
+              <div class="col-12 d-flex justify-content-center flex-column">
+    
+                  <img class="rm-hero mx-auto hide" src="images/rm-hero.png">
+                  <h1 class="hero-title text-center title-color-light">RECYCLE MATTERS</h1>
+                  <h2 class="hero-subtitle title-color-light mx-auto">What's the matter?</h2>
+                  </div>
+              </div>
+          </div>
+    
+          <div class="row main-page-bottom-padding">
+              <div class="col-12 d-flex justify-content-center pr-0">
+                <div class="flex-grow-1 d-flex main-search text-center">
+                  <form class="form-inline flex-nowrap mx-0 mx-auto " action="search.html">
+                    <input class="form-control searchbar-homepage searchbar placeholder-text" type="search" placeholder="ex: batteries, plastic bags, light bulbs, etc" aria-label="Search">
+                    <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
+                  </form>
+              </div>
+          </div>
+    
+        </div>
+    
+  
+
+
+<!-- ===================================================== --> 
+<!-- ==================    FOOTER    ===================== -->
+<!-- ===================================================== --> 
+
+
+<footer class="background-dark">
+  <div class="container">
+      <div class="row">
+          <!-- NEWSLETTER 1 -->
+          <div class=" col-12 col-sm-6 col-lg-3 footer-columns myNewsletter1 ">
+            <h3 class="title-color-light recycle-h3">Newsletter</h3>
+            <p class="text-color-light">Get the latest recycling & eco related news</p>
+            <form class="form-inline flex-nowrap mx-0 mx-auto " action="search.html">
+              <input class="form-control subscribe-bar searchbar placeholder-text" type="search" placeholder="name@example.com" aria-label="Search">
+              <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit">Subscribe</button>
+            </form>
+          </div>
+          <!-- CONNECT 2-->
+          <div class=" col-12 col-sm-6 col-lg-3 footer-columns myConnect2 d-flex flex-column justify-content-center">
+            <h3 class="title-color-light recycle-h3">Connect</h3>
+            <ul class="MySocialIcons list-unstyled list-inline">
+              <li class="list-inline-item mr-3">
+                <a href="https://www.instagram.com/"><img src="../images/instagram.svg" alt="instagram logo"></a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://www.twitter.com/"><img src="../images/twitter.svg" alt="twitter logo"></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/"><img src="../images/facebook.svg" alt="facebook logo"></a>
+              </li>
+            </ul>
+          </div>
+          <!-- CONTACT 3 -->
+          <div class=" col-12 col-sm-6 col-lg-3 footer-columns myContact3 text-color-light">
+            <h3 class="title-color-light recycle-h3">Contact</h3>
+            <p>Hours: 9a-5p (M-F)</p>
+            <p>Phone: 404-232-6785</p>
+          </div>
+          <!-- ADDRESS 4 -->
+          <div class=" col-12 col-sm-6 col-lg-3 footer-columns myAddress4 text-color-light">
+            <h3 class="title-color-light recycle-h3">Address</h3>
+            <p>Recycle Matters</p>
+            <p>1212 Hill St.</p>
+            <p>Atlanta, GA</p>
           </div>
       </div>
-  </nav> -->
+
+  </div>
+</footer>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4 myFooter">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Newsletter</h6>
+        <p>Get the latest recycling & eco-related news.</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <button class="btn btn-outline-success my-2 my-sm-0 myFooterButton" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Connect</h6>
+        <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline mySocialIcons">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fas fa-clock mr-3"></i>9AM - 5PM</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>404) 232-6785</p>
+          
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Address</h6>
+        <p>
+          <i class="fas fa-building mr-3"></i> 1212 Hill Street</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> recyclematters@gmail.com</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+
+      <!-- Grid column -->
+
+      
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+</footer>
+<!-- Footer -->
 
 
 

@@ -11,15 +11,21 @@ h1, h2, h3, h4, p {
     font-family: Acumin Pro;
 }
 
+html, body {overflow-x: hidden;}
+
 .container {
     max-width: 1080px;
 }
+
+
+
+.page-bottom-padding { padding-bottom: 80px;}
 /* page title - recycle matters h1 */
 .recycle-h1 {
     font-family: Acumin Pro;
     font-weight: 700; 
     font-size: 46px;
-    padding-top: 70px;
+    padding-top: 190px;
     padding-bottom: 30px;
 }
 .recycle-h2 {
@@ -91,7 +97,7 @@ Dark Gray 1             Dark Gray 2             Charcoal
 /* light color for heading elements - hierachy - dark background */
 .title-color-light { color: #F6F6F6 !important;}
 /* light color for sub elements - hierachy - dark background */
-.text-color-light { color: #F6F6F6;}
+.text-color-light { color: #EEE;}
 /* warning color - highlight for instructions */
 .highlighter { background-color: #FADF63;}
 /* isolation color - normal state background*/
@@ -104,8 +110,9 @@ Dark Gray 1             Dark Gray 2             Charcoal
 .placeholder-color { color: #BBBBBB;}
 /* transparent background color give get rid of modal edges poking out*/
 .transparent-background {background-color: rgba(255, 255, 255, 0) !important;}
+
 /* set border width to zero to get rid of bootstrap lines */
-.rm-border {border-width: 0px !important;}
+/* .rm-border {border-width: 0px !important;} */
 /* set navbar text color */
 .navbar-text-light {color: #2FD09A !important;}
 
@@ -130,13 +137,15 @@ Dark Gray 1             Dark Gray 2             Charcoal
 .navbar {
     font-weight: 300;
     font-size: 16px ;
-    margin: auto; 
+    margin: auto;
 }
 /* placeholder text */
 .placeholder-text {
     font-family: Acumin Pro;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 14px !important;
+    color: #EEEEEE !important;
+    padding-bottom: 0px !important;
 }
 
 #logo {width: 100px;}
@@ -156,8 +165,32 @@ Dark Gray 1             Dark Gray 2             Charcoal
     border-bottom-right-radius: 0px !important;
     height: 40px !important;
 }
-
+/* reset height for subscribe bar */
+.subscribe-bar{
+    height: 38px !important;
+}
 
 .myFooter {
-    background-color: #465F75;
+    background-color: #465F75;¬
+}
+
+
+/* setting top padding for footer */
+footer {
+    padding-top: 40px;
+}
+/* setting space between footer titles and subcontent */
+.footer-columns h3 {padding-bottom: 10px;}
+
+/* setting font weight for footer subcontent */
+.footer-columns p {
+    font-size: 14px;
+    font-weight: 100;
+    color: #EEEEEE;
+}
+@media (min-width: 576px) { 
+  /* reset width for subscribe bar */
+.subscribe-bar{
+    width: 210px !important;
+}  
 }
