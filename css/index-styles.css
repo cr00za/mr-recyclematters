@@ -2,28 +2,50 @@
    --   HOME PAGE (Index) Styles  --
    -- --------------------------- -- */
 
+   body {
+    height:100%;
+    padding-top: 116px;
+    background: url("../images/hero-pic.jpg") center center fixed;
+    background-size:cover;
+    /* z-index: 0; */
+    text-align: center;
+}
 
+.hero-title {
+  font-family: Bungee;
+  font-weight: normal;
+  font-size: 55px;
+}
+.hero-subtitle {
+  font-size: 27px;
+}
 
+.rm-hero {
+  width: 100%;
+  max-width: 426px;}
+.searchbar-homepage {
+  width: 412px !important;
+}
 
 /* body{
     height: 100%;
 }
        */
 
-.background-light {
+/* .background-light { */
     /* Set rules to fill background */
     /* min-height: 100%; */
     /* min-width: 1024px; */
       
     /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
       
     /* Set up positioning */
-    position: fixed;
+    /* position: fixed; */
     /* top: 0;
     left: 0; */
-}
+/* } */
   /* Place text in the middle of the image */
   /* .hero-text {
     text-align: center;

@@ -43,7 +43,8 @@ h1, h2, h3, h4, p {
 /* global border radius */
 .recycle-borders { border-radius: 4px !important;}
 
-
+ /* hide an element on a page */
+.hide {display: none !important;}
 /* ---------------------------------------- */
 
 /* --    Main Colors    --
@@ -96,7 +97,7 @@ Dark Gray 1             Dark Gray 2             Charcoal
 /* isolation color - normal state background*/
 .isolation-color { background-color: #2FD09A !important;}
 /* isolation color - text */
-.isolation-color-text { color: #2FD09A;}
+.isolation-color-text { color: #2FD09A !important;}
 /* isolation color - hover state background*/
 .hover-color { background-color: #5EBF9F !important;}
 /* placeholder text color */
@@ -105,6 +106,9 @@ Dark Gray 1             Dark Gray 2             Charcoal
 .transparent-background {background-color: rgba(255, 255, 255, 0) !important;}
 /* set border width to zero to get rid of bootstrap lines */
 .rm-border {border-width: 0px !important;}
+/* set navbar text color */
+.navbar-text-light {color: #2FD09A !important;}
+
 
 /* Bootstrap Button styling */
 .btn-primary {
@@ -142,16 +146,18 @@ Dark Gray 1             Dark Gray 2             Charcoal
    -- ------------ -- */
 
 .mySearchButton {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-color: rgba(255, 255, 255, 0);
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-color: rgba(255, 255, 255, 0) !important;
+  
 }
  .searchbar{
     border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px;
-    height: 40px;
-    z-index 20;
+    border-bottom-right-radius: 0px !important;
+    height: 40px !important;
 }
+
+
 .myFooter {
     background-color: #465F75;
 }

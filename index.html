@@ -33,13 +33,13 @@
     <!--         NAVBAR        -->
     <!-- --------------------- -->
  <header>
-  <nav class="navbar navbar-expand-lg navbar-custom fixed-top navbar-light marginLeft-sm marginRight-sm background-dark" id="nav">
+  <nav class="navbar navbar-expand-md navbar-custom fixed-top navbar-light marginLeft-sm marginRight-sm background-light" id="nav">
     <div class="navSpacer flex-grow-1 d-flex">
         <a class="navbar-brand " href="index.html"><img id="logo" src="../images/RM logo.svg" alt="Logo"></a>
     </div>   
     
-    <div class="flex-grow-1 d-flex">
-      <form class="form-inline flex-nowrap mx-0 mx-lg-auto">
+    <div class="flex-grow-1 d-flex ">
+      <form class="form-inline flex-nowrap mx-0 mx-lg-auto hide">
         <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
         <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
       </form>
@@ -51,11 +51,11 @@
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link title-color-light" href="#">About</a>
-        <a class="nav-item nav-link js-anchor-link title-color-light" href="#myProcess">A-Z Index</a>
-        <a class="nav-item nav-link js-anchor-link title-color-light" href="#portfolio">Location</a>
-        <a class="nav-item nav-link js-anchor-link title-color-light" href="#aboutMe">News</a>
-        <a class="nav-item nav-link js-anchor-link toggle title-color-light" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" href="#contactMe" >Contact</a>
+        <a class="nav-item nav-link title-color-dark" href="#">About</a>
+        <a class="nav-item nav-link js-anchor-link title-color-dark" href="#myProcess">A-Z Index</a>
+        <a class="nav-item nav-link js-anchor-link title-color-dark" href="#portfolio">Location</a>
+        <a class="nav-item nav-link js-anchor-link title-color-dark" href="#aboutMe">News</a>
+        <a class="nav-item nav-link js-anchor-link toggle title-color-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" href="#contactMe" >Contact</a>
       </div>
     </div>
   </nav>
@@ -67,21 +67,28 @@
     <!--         HERO          -->
     <!-- --------------------- -->
 
-    <div class="container d-flex justify-content-center">
+    <div class="container set-background">
       
       <div class="row pt-5">
-        <div class="col-12">
-            <img class="logoImage" src="images/Recycle Matters logo.png">
-      
-            <div class="flex-grow-1 d-flex main-search" style="z-index: 25;">
-              <form class="form-inline flex-nowrap mx-0 mx-lg-auto">
-                <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
+          <div class="col-12 d-flex justify-content-center flex-column">
+
+              <img class="rm-hero mx-auto hide" src="images/rm-hero.png">
+              <h1 class="hero-title text-center title-color-light">RECYCLE MATTERS</h1>
+              <h2 class="hero-subtitle title-color-light mx-auto">What's the matter?</h2>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-12 ">
+            <div class="flex-grow-1 d-flex main-search text-center" style="z-index: 25;">
+              <form class="form-inline flex-nowrap mx-0 mx-auto ">
+                <input class="form-control searchbar-homepage searchbar" type="search" placeholder="ex: batteries, plastic bags, light bulbs, etc" aria-label="Search">
                 <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
               </form>
-            </div>
-        </div>
-      
-        </div>
+          </div>
+      </div>
+
     </div>
 
 
