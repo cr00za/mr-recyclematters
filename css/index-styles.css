@@ -2,30 +2,47 @@
    --   HOME PAGE (Index) Styles  --
    -- --------------------------- -- */
 
-   body {
-    height:100%;
-    padding-top: 116px;
-    background: url("../images/hero-pic.jpg") center center fixed;
-    background-size:cover;
-    /* z-index: 0; */
-    text-align: center;
-}
+body {
+  height:100%;
+  padding-top: 116px;
+  background: url("../images/hero-pic.jpg") center center fixed;
+  background-size:cover;
+  }
 
 .hero-title {
   font-family: Bungee;
   font-weight: normal;
   font-size: 55px;
-}
+  padding-top: 10%;
+  padding-bottom: 16px;
+  }
 .hero-subtitle {
   font-size: 27px;
-}
+  padding-bottom: 16px;
+  }
 
 .rm-hero {
   width: 100%;
-  max-width: 426px;}
+  max-width: 353px;}
+/* setting width of search bar to match margins of mobile */
 .searchbar-homepage {
-  width: 412px !important;
-}
+  width: 303px !important;
+  }
+
+/* .main-search {padding-bottom: 80px;} */
+@media (min-width: 576px) { 
+  
+  /* setting width of search bar a little biggle for larger size devices */
+  .rm-hero {
+    width: 100%;
+    max-width: 394px;}
+  .searchbar-homepage {
+    width: 384px !important;
+  }
+ }
+
+
+
 
 /* body{
     height: 100%;

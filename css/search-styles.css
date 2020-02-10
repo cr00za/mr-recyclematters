@@ -27,9 +27,6 @@
 
 .title-show {display: block;}
 .title-hide {display: none;}
-.material-title2 {}
-.material-title3 {}
-.material-title4 {}
 
 /* -- ------------ --
    --   CAROUSEL   --
@@ -86,6 +83,7 @@ li.list-inline-item {
 .section-instructions {
     margin-bottom: 70px;
 }
+.instruct-block-title {padding-bottom: 10px;}
 
 .banner {
     width: 100%;
@@ -179,6 +177,11 @@ p.carbon-footprint-unit {
     max-width: 550px;
     position:absolute;
     }
+
+/* map modal */
+/* .modal-background {
+    background-image: url('../images/hero-pic.jpg') !important;
+} */
 
 
 /* map results */

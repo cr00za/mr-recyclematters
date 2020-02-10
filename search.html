@@ -37,7 +37,7 @@
         
         <div class="flex-grow-1 d-flex">
           <form class="form-inline flex-nowrap mx-0 mx-lg-auto">
-            <input class="form-control" type="search" placeholder="ex: plastic bags" aria-label="Search">
+            <input class="form-control searchbar" type="search" placeholder="ex: plastic bags" aria-label="Search">
             <button class="btn btn-primary btn-outline-success my-2 my-sm-0 mySearchButton title-color-light " type="submit"><img src="../images/search-magnifier.svg" alt="magnifying glass"></button>
           </form>
         </div>
@@ -49,9 +49,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link navbar-text-light" href="#">About</a>
-            <a class="nav-item nav-link js-anchor-link navbar-text-light" href="#myProcess">A-Z Index</a>
-            <a class="nav-item nav-link js-anchor-link navbar-text-light" href="#portfolio">Location</a>
-            <a class="nav-item nav-link js-anchor-link navbar-text-light" href="#aboutMe">News</a>
+            <a class="nav-item nav-link js-anchor-link navbar-text-light" href="atoz.html">A-Z Index</a>
+            <a class="nav-item nav-link js-anchor-link navbar-text-light" href="">Location</a>
+            <a class="nav-item nav-link js-anchor-link navbar-text-light" href="">News</a>
             <a class="nav-item nav-link js-anchor-link toggle navbar-text-light" data-toggle="modal" data-target="#exampleModal" data-whatever="Miguel" href="#contactMe" >Contact</a>
           </div>
         </div>
@@ -60,13 +60,13 @@
 
 
 
-    <!-- ------------ -->
-    <!--     MODAL    -->
-    <!-- ------------ -->
+    <!-- ---------------- -->
+    <!--     MAP MODAL    -->
+    <!-- ---------------- -->
     
   
   <!-- Modal -->
-  <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade " id="mapmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered transparent-background recycle-borders" role="document">
       <div class="modal-content recycle-borders transparent-background ">
         <div class="modal-header background-dark">
@@ -284,7 +284,7 @@
                     <h2 class="recycle-h2">Recycling Centers nearby</h2>
                     <div>
                         <!-- Button trigger modal -->
-                        <a href="" class="" data-toggle="modal" data-target="#exampleModalCenter">Change</a>
+                        <a href="" class="" data-toggle="modal" data-target="#mapmodal">Change</a>
                         <img src="../images/location.svg" alt="location icon">
                     </div>
                 </div>
