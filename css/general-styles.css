@@ -1,14 +1,23 @@
+.h {
+    font-family: "Bungee";
+    }
+  .k {
 
+    font-family: "acumin-pro",sans-serif;
+    }
 /* -- ------------ --
    -- CSS / STYLES --
    -- ------------ -- */
 
 /* Global Reset */
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p,
+.recycle-h1,
+.recycle-h2,
+.recycle-h3 {
     margin: 0px !important; 
     line-height: 125% !important;
-    font-family: Acumin Pro;
+    font-family: "acumin-pro",sans-serif;
 }
 
 html, body {overflow-x: hidden;}
@@ -25,21 +34,18 @@ html, body {overflow-x: hidden;}
 .page-bottom-padding { padding-bottom: 80px;}
 /* page title - recycle matters h1 */
 .recycle-h1 {
-    font-family: Acumin Pro;
     font-weight: 700; 
     font-size: 46px;
     padding-top: 190px;
     padding-bottom: 30px;
 }
 .recycle-h2 {
-    font-family: Acumin Pro;
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;
 }
 
 .recycle-h3 {
-    font-family: Acumin Pro;
     font-weight: 500;
     font-size: 18px;
 }
@@ -144,8 +150,8 @@ Dark Gray 1             Dark Gray 2             Charcoal
 }
 /* placeholder text */
 .placeholder-text {
-    font-family: Acumin Pro;
-    font-weight: 300;
+    font-family: "acumin-pro",sans-serif;
+    font-weight: 100;
     font-size: 14px !important;
     color: #EEEEEE !important;
     padding-bottom: 0px !important;
@@ -184,9 +190,10 @@ footer {
 
 /* setting font weight for footer subcontent */
 .footer-columns p {
-    font-size: 14px;
+    font-style: normal;
     font-weight: 100;
-    color: #EEEEEE;
+    font-size: 16px;
+    color: #EEE;
 }
 @media (min-width: 576px) { 
   /* reset width for subscribe bar */

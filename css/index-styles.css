@@ -10,7 +10,7 @@ body {
   }
 
 .hero-title {
-  font-family: Bungee;
+  font-family: "Bungee";
   font-weight: normal;
   font-size: 55px;
   padding-top: 10%;
@@ -19,6 +19,7 @@ body {
 .hero-subtitle {
   font-size: 27px;
   padding-bottom: 16px;
+  font-family: "acumin-pro",sans-serif;
   }
 
 .rm-hero {
