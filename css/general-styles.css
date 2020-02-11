@@ -140,7 +140,7 @@ Dark Gray 1             Dark Gray 2             Charcoal
 
 /* Set navbar text weight to thin when not active */
 .navbar {
-    font-weight: 500;
+    font-weight: 300;
     font-size: 16px ;
     margin: auto;
 }
