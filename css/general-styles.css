@@ -122,6 +122,8 @@ Dark Gray 1             Dark Gray 2             Charcoal
 /* set border width to zero to get rid of bootstrap lines */
 /* .rm-border {border-width: 0px !important;} */
 
+/* set modal background color */
+.modal-background {background-color: #02437B; } 
 
 /* Bootstrap Button styling */
 .btn-primary {
