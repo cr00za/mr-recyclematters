@@ -164,7 +164,6 @@ Dark Gray 1             Dark Gray 2             Charcoal
     font-family: "acumin-pro",sans-serif;
     font-weight: 100;
     font-size: 14px !important;
-    color: #EEEEEE !important;
     padding-bottom: 0px !important;
 }
 
@@ -206,6 +205,12 @@ footer {
     font-size: 16px;
     color: #EEE;
 }
+
+.homepage-bottom-pad {
+    margin-bottom: 210px;
+}
+
+
 @media (min-width: 576px) { 
   /* reset width for subscribe bar */
 .subscribe-bar{
