@@ -1,0 +1,93 @@
+/* -- ------------------- --
+   -- A to Z Index Styles --
+   -- ------------------- -- */
+
+
+.pageTopic {
+    padding: 40px;
+}
+
+.my-common-items {
+    height: 117px;
+}
+
+.myCardContainer {
+    margin-bottom: 40px;
+}
+
+.myCardMargin {
+    margin-bottom: 40px;
+}
+
+.myCardBackground {
+    background-color: #dddddd;
+}
+
+.myIndexAlphabet {
+    font-size: 27px;
+    font-weight: 700;
+    color: #333635;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    color: #3A91BB;
+    text-decoration: underline;
+}
+
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2dot4 {
+    /* -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%; */
+    /* max-width: 20%; */
+}
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        /* -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%; */
+        /* max-width: 20%; */
+    }
+}
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        /* -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%; */
+        /* max-width: 20%; */
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        /* -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%; */
+        /* max-width: 20%; */
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        /* -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%; */
+        /* max-width: 20%; */
+    }
+}
+
