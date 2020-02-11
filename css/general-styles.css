@@ -106,6 +106,8 @@ Dark Gray 1             Dark Gray 2             Charcoal
 .text-color-light { color: #EEE;}
 /* warning color - highlight for instructions */
 .highlighter { background-color: #FADF63;}
+/* Regular color - highlight for instructions */
+.highlighter-good { background-color: #F6F6F6;}
 /* isolation color - normal state background*/
 .isolation-color { background-color: #2FD09A !important;}
 /* isolation color - text */
@@ -140,7 +142,7 @@ Dark Gray 1             Dark Gray 2             Charcoal
 
 /* Set navbar text weight to thin when not active */
 .navbar {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px ;
     margin: auto;
 }
