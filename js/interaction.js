@@ -4,15 +4,15 @@
    -- --------------------------------- --- -- */
 
 
-//    $(document).ready(function() { 
+   $(document).ready(function() { 
 
-//       $('.carousel-indicators li a img').click(function() {
-//          let alt = $(this).attr('alt');
-//          $('.material-title').html(alt);
-//          $('.instruct-block-title').swap("Fluorescent Bulb", "alt");
-//        });
+      $('.carousel-indicators li a img').click(function() {
+         let alt = $(this).attr('alt');
+         $('.material-title').html(alt);
+         $('.instruct-block-title').swap("Fluorescent Bulb", "alt");
+       });
 
-//   });
+  });
  
 //   $(".instruct-block-title").text(function () {
 //    return $(this).text().replace("contains", "hello everyone"); 
