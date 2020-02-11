@@ -26,10 +26,7 @@ html, body {overflow-x: hidden;}
     max-width: 1080px;
 }
 
-/* change hamburger menu color (light isolation) for dark mode */
-.navbar-light {
-    color: #2FD09A;
-}
+
 
 .page-bottom-padding { padding-bottom: 80px;}
 /* page title - recycle matters h1 */
@@ -122,8 +119,6 @@ Dark Gray 1             Dark Gray 2             Charcoal
 
 /* set border width to zero to get rid of bootstrap lines */
 /* .rm-border {border-width: 0px !important;} */
-/* set navbar text color */
-.navbar-text-light {color: #2FD09A !important;}
 
 
 /* Bootstrap Button styling */
@@ -135,7 +130,8 @@ Dark Gray 1             Dark Gray 2             Charcoal
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background: #5EBF9F !important;
 }
- 
+
+ /*  ============ NAVBAR ============== */
 .navbar-toggler {
     color: #287094;
     /* rgba(2, 50, 70, 1); */
@@ -144,10 +140,25 @@ Dark Gray 1             Dark Gray 2             Charcoal
 
 /* Set navbar text weight to thin when not active */
 .navbar {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 16px ;
     margin: auto;
 }
+
+/* set navbar text color */
+.navbar-text-light {color: #2FD09A !important;}
+
+/* change hamburger menu color (light isolation) for dark mode */
+.navbar-light {color: #2FD09A;}
+
+/* set navigation font */
+/* .nav-font {
+    font-family: "acumin-pro",sans-serif !important;
+    font-weight: bold;
+} */
+
+
+
 /* placeholder text */
 .placeholder-text {
     font-family: "acumin-pro",sans-serif;
