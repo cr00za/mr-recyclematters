@@ -107,7 +107,7 @@ Dark Gray 1             Dark Gray 2             Charcoal
 /* warning color - highlight for instructions */
 .highlighter { background-color: #FADF63;}
 /* Regular color - highlight for instructions */
-.highlighter-good { background-color: #F6F6F6;}
+.highlighter-good { background-color: #FFFFFF;}
 /* isolation color - normal state background*/
 .isolation-color { background-color: #2FD09A !important;}
 /* isolation color - text */
